@@ -1,5 +1,5 @@
 body {
-    background-image: url('./images/frontpic.JPG');
+    background-image: url('/images/waterfall.jpg');
     background-size: cover;
     background-attachment: fixed;
     text-align: center;
@@ -57,16 +57,25 @@ body {
     width: 80%;
 }
 
+#aboutMe{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
 #post {
     width: 80%;
     min-height: 100px;
     margin: auto;
 }
-#albumPage{
-    width: 90%;
+
+.album{
+    width:90%;
     display: grid;
     grid-template-columns: 1fr .5fr 2fr;
-    min-height: 500px;
     margin: auto;
 }
 #streamingBottom{
@@ -90,4 +99,49 @@ a{
     color:black;
     font-weight: bold;
     text-decoration: none;
+}
+.htLarge{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:85%;
+    margin: auto;
+}
+.htSmall{
+    display:none;
+}
+
+@media(max-width:1200px){
+
+    #aboutMe{
+        width: 75%;
+    }
+    .album{
+        display: block;
+    }
+    .albumArt{
+        width:50%;
+        margin: auto;
+    }
+}
+
+@media(max-width:800px){
+    #aboutMe{
+        display: block;
+    }
+    .profileImg{
+        width:50%;
+        margin: auto;
+    }
+    #albumPage{
+        display: block;
+    }
+    .htLarge{
+        background-color: red;
+        display: none;
+    }
+    .htSmall{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
 }
