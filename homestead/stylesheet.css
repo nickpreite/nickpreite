@@ -1,0 +1,29 @@
+
+.chart{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.imagecell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(175, 175, 175);
+    min-height: 50px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.imagecell > img{
+    width: 100%
+}
+.textcell{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: auto / 1 / span 1 / span 3;
+    background-color: rgb(222, 222, 222);
+    min-height: 1px;
+    border: 1px solid black;
+    padding: 5px;
+}
