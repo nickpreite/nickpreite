@@ -1,7 +1,20 @@
 
+body{
+    text-align: center;
+}
+
+.menuItem{
+    min-height: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .chart{
+    margin: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: 85%
 }
 .imagecell{
     display: flex;
