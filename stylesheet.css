@@ -110,6 +110,26 @@ a{
     display:none;
 }
 
+.artGallery{
+    width: 95%;
+    min-height: 50px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.artThumb{
+    width: 95%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+}
+.artThumb > div > a > img{
+    width: 100%;
+    border-radius: 200px;
+}
+
+
 @media(max-width:1200px){
 
     #aboutMe{
