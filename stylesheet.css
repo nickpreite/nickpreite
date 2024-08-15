@@ -1,0 +1,166 @@
+body {
+    background-image: url('/images/waterfall.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: auto;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#topBit{
+    background-color: white;
+    width: 100%;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-bottom: rgba(86, 86, 86, 0.562) 1px solid;
+}
+
+#navBar{
+    width: 100%;
+    background-color: #ffffff;
+    height: 50px;
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.navItem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    border-bottom: rgba(86, 86, 86, 0.562) 1px solid;
+    border-top: rgba(86, 86, 86, 0.562) 1px solid;
+}
+.navItem:hover{
+    background-color: #bebebe;
+    border-bottom: rgba(86, 86, 86, 0.562) 1px solid;
+    border-top: rgba(86, 86, 86, 0.562) 1px solid;
+}
+
+
+#mainContent{
+    width: 90%;
+    background-color: #ffffffae;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#musicPage{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 80%;
+}
+
+#aboutMe{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    width: 50%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#post {
+    width: 80%;
+    min-height: 100px;
+    margin: auto;
+}
+
+.album{
+    width:90%;
+    display: grid;
+    grid-template-columns: 1fr .5fr 2fr;
+    margin: auto;
+}
+#streamingBottom{
+    width: 100%;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    border-top: rgba(86, 86, 86, 0.562) 1px solid;
+}
+
+footer{
+
+    width:100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ffffff;
+    padding: 5px;
+}
+
+a{
+    color:black;
+    font-weight: bold;
+    text-decoration: none;
+}
+.htLarge{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:85%;
+    margin: auto;
+}
+.htSmall{
+    display:none;
+}
+
+.artGallery{
+    width: 95%;
+    min-height: 50px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.artThumb{
+    width: 95%;
+    margin: auto;
+    aspect-ratio: 1/1;
+    display: grid;
+    grid-template-rows: 10fr 1fr;
+}
+.artThumb > div > a > img{
+    width: 100%;
+    border-radius: 200px;
+}
+
+@media(max-width:1200px){
+
+    #aboutMe{
+        width: 75%;
+    }
+    .album{
+        display: block;
+    }
+    .albumArt{
+        width:50%;
+        margin: auto;
+    }
+}
+
+@media(max-width:800px){
+    #aboutMe{
+        display: block;
+    }
+    .profileImg{
+        width:50%;
+        margin: auto;
+    }
+    #albumPage{
+        display: block;
+    }
+    .htLarge{
+        background-color: red;
+        display: none;
+    }
+    .htSmall{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+    }
+}

@@ -1,0 +1,86 @@
+
+body{
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:black;
+}
+.menuItem{
+    min-height: 50px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.chart{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 85%
+}
+.imagecell{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(175, 175, 175);
+    min-height: 50px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.imagecell > img{
+    width: 100%
+}
+.textcell{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: auto / 1 / span 1 / span 3;
+    background-color: rgb(222, 222, 222);
+    min-height: 1px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.dateCell{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-area: auto / 1 / span 1 / span 3;
+    background-color: rgb(151, 151, 151);
+    min-height: 1px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+@media(max-width:800px){
+    .chart{
+        display: block;
+        width: 100%;
+    }
+}
+
+.menuButton{
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(222, 222, 222);
+    height: 100%;
+}
+
+.menuButton:hover{
+    background-color: rgb(151, 151, 151);
+}
+#menu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width:100%;
+    background-color: red;
+    justify-content: space-around;
+}
